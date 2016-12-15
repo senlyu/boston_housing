@@ -13834,7 +13834,7 @@ JEmSJEljY+eUJEmSJEmSxsbOKUmSJEmSJI2NnVOSJEmSJEkaGzunJEmSJEmSNDZ2TkmSJEmSJGls
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: The model which max_depth=3. The more training data added, the curve of training is decrease, the curve of testing is increase in the first and a little decrease in the end. I don't think if we add more training points will help the model, because it may cause overfitting.</strong></p>
+<p><strong>Answer: The model which max_depth=3. The more training data added, the curve of training is decrease, the curve of testing is increase in the first and a little decrease in the end. Adding training data is always welcome, but it seems that the two curves here are converging to a optimal value. So adding data points will not make much difference.</strong></p>
 
 </div>
 </div>
@@ -14627,7 +14627,7 @@ rkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: Grid Search is a way to optimize a measure of algorithm's preformance on a simple dataset, it using  exhaustive searching, to find the best situation of a learning algorithm, based on the measurements you give.</strong></p>
+<p><strong>Answer: Grid Search is a way to optimize a measure of algorithm's preformance on a simple dataset, it using  exhaustive searching, to find the best situation of a learning algorithm, based on the measurements you give. Here it means we using decision tree as our way to make the model, we change the max depth of the tree, to see under which max depth will the model has the best result from the preformance matrix, which is our case, as mentioned before, is using R^2 to measure the preformance.</strong></p>
 
 </div>
 </div>
@@ -14648,7 +14648,7 @@ rkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: k-fold cross-validation means that to separate the dataset to k clusters, preform the model k times using one specific clusters as the test data and the rest as the training data. Then, gather all the k models together and average them to find one best model. If we do not run the k-fold cross-validation then the model will overfit. </strong></p>
+<p><strong>Answer: k-fold cross-validation means that to separate the dataset to k clusters, preform the model k times using one specific clusters as the test data and the rest as the training data. Then, gather all the k models together and average them to find one best model. If we do not run the k-fold cross-validation then the model will overfit, because the grip search will find the best fit model for the training data, but that doesn't mean the model will fit best for the test data too, and the most fit model to training data is very likly to be too complex, that is overfitting. And using k-fold clusters can help us to use all the data as make the model and validate the model, so we will have a model could fit to all the data we have. Do the model in k times, because we want every data could be both used in make the model and validate the model, so the model could fit well of all the data.</strong></p>
 
 </div>
 </div>
